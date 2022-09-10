@@ -3,7 +3,7 @@
 # This script takes as input a name of a directory containing experimental data, e.g. 'experiment1'
 # It generates a data frame from all the data in the directory corresponding to one particular experiment.
 
-# Note that your working directory should contain a directory 'DnaNudge Experimental Data' containing deirectories corresponding to #different experiments: 'experiment1', 'experiment2', etc. So you can use this script together with the 'DnaNudge Experimental Data'
+# Note that your working directory should contain a directory 'Experimental Data' containing deirectories corresponding to #different experiments: 'experiment1', 'experiment2', etc. So you can use this script together with the 'Experimental Data'
 #on your local machine
 
 #The script generates two .png files containing plots of the data.
@@ -125,7 +125,7 @@ def subplots_fluorescence(df):
 #####  Create a data structure out of all the data from an experiment #####
 
 # Set a path to the data files
-path=os.getcwd().replace('\\','/')+'/DnaNudge Experimental Data/'+str(directory_name)+'/*.txt'
+path=os.getcwd().replace('\\','/')+'/Experimental Data/'+str(directory_name)+'/*.txt'
 
 
 data_structure=extract_data(path)  
